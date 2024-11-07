@@ -2,7 +2,7 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
     <meta name="description" content="Expert IT Solutions">
     <meta name="keywords" content="Expert IT Solutions, IT Solutions, IT Consultancy">
     <meta name="author" content="Expert IT Solutions">
@@ -11,7 +11,10 @@
     <link rel="icon" href="img/logo.png" type="image/png">
 </head>
 <body>
-    <header>
+    <div class="bg-container">
+        <div class="bg-img"></div>
+    </div>
+    <header >
         <div class="logo">
             <img src="img/logo.png" alt="Expert IT Solutions">
             <h1>Expert IT Solutions</h1>        
@@ -30,6 +33,11 @@
                 <li><a href="Page/contact.html">Kontakt</a></li>
                 _____________________
             </ul>
+            <div id="lan-mobile" class="lan-mobile">
+                <button onclick="changeLanguage('et')">Eesti</button>
+                <button onclick="changeLanguage('ru')">Русский</button>
+                <button onclick="changeLanguage('en')">English</button>
+            </div>
         </nav>
         <div id="lan" class="lan">
             <button onclick="changeLanguage('et')">Eesti</button>
@@ -43,8 +51,13 @@
             <a href="#"><img src="img/telegram3.jfif" alt="Telegram"></a>
             <a href="#"><img src="img/instagram2.png" alt="Instagram"></a>
         </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <button class="cta-button">Get Started</button>
+        
     </header>
-
+    
     <main class="grid-layout">
         <div class="box text-box">
             <p>Meie teenused on kohandatud teie ettevõtte vajadustele. Pakume laia valikut IT-lahendusi, sealhulgas veebiarendust, IT-tuge ja andmebaasihaldust, mis aitavad teil keskenduda oma äritegevusele.</p>
@@ -64,31 +77,25 @@
         <div class="box text-box">
             <p>Meie meeskond on kogenud ja asjatundlik. Oleme töötanud mitmesuguste klientidega ning meil on kogemusi erinevates valdkondades, sealhulgas tervishoid, haridus ja finantsteenused.</p>
         </div>
-        <div class="box image-box">
-            <img src="img/software-developer-6521720_1280.jpg" alt="Kogenud meeskond" />
+        <div class="box image-box" >
+            <img src="img/coding.png" alt="Kogenud meeskond" />
         </div>
         <div class=" box text-box">
             <p>Kontaktige meid, et saada rohkem infot meie teenuste kohta või küsige nõu, kuidas oma ettevõtte IT vajadusi kõige paremini lahendada. Oleme alati valmis vastama teie küsimustele ja leidma just teile sobiva lahenduse.</p>
         </div>
-        <div class="box image-box">
-            <img src="img/service4.jpg" alt="Kontakt" />
-        </div>
-        <div class="box text-box">
-            <p>Minust!!!</p>
-        </div>
-        <!-- Add this to your HTML file -->
         <div id="loading" style="display: none;">Loading...</div>
     </main>
+    
     <footer>
         <div class="footer-content">
             <p>&copy; 2023 Expert IT Solutions. All rights reserved.</p>
             <div class="footer-links">
                 <a href="Page/privacy.html">Privacy Policy</a>
                 <a href="Page/terms.html">Terms of Service</a>
+                <a href="Page/contact.html">Contact Us</a>
             </div>
         </div>
     </footer>
-    
 
     <script src="JS/script.js"></script>
 </body>

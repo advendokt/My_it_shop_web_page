@@ -45,6 +45,8 @@ header {
     animation: gradient 15s ease infinite;
 }
 
+
+
 .logo {
     display: flex;
     align-items: center;
@@ -104,12 +106,15 @@ header {
     position: fixed;
     top: 20px;
     right: 20px;
-    font-size: 24px;
+    font-size: 45px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
     z-index: 1001;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease ;
+    border: 2px solid #fff;
 }
 
 /* Social icons styles */
@@ -271,7 +276,7 @@ footer {
     text-align: center;
     padding: 10px;
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
 }
 
@@ -302,6 +307,87 @@ footer {
     animation: pulse 1s infinite;
 }
 
+/* Language selection styles for mobile version */
+.lan-mobile {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 325px;
+    left: 10px;
+    z-index: 1001;
+}
+
+.lan-mobile button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #fff;
+}
+
+.lan-mobile button:hover {
+    background-color: #555;
+    transform: scale(1.1); /* Scale up on hover */
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        display: none !important;
+    }
+    .lan {
+        display: none;
+    }
+    .lan-mobile {
+        display: block;
+    }
+}
+
+/* Background Image Container */
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure it stays behind other content */
+}
+
+.bg-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/bg/bg-wall.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Adjust the blur radius as needed */
+    -webkit-filter: blur(8px); /* For Safari */
+}
+
+/* Other CSS styles... */
+
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -312,4 +398,16 @@ footer {
     100% {
         transform: scale(1);
 }
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        display: none !important;
+    }
+    .lan {
+        display: none;
+    }
+    .lan-mobile {
+        display: block;
+    }
 }
