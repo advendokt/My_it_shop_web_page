@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -27,6 +28,44 @@ main {
     padding: 20px;
 }
 
+/* Section Styles */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section p, section ul, section ol {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+section ul, section ol {
+    padding-left: 20px;
+}
+
+section ul li, section ol li {
+    margin-bottom: 10px;
+}
+
+/* Service Section Styles */
+.service-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.service-section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 
 
 header {
@@ -38,11 +77,11 @@ header {
     background-size: 400% 400%;
     color: #fff;
     text-align: center;
-    position: relative;
     width: 100%;
     height: 100px;
     z-index: 1000;
     animation: gradient 15s ease infinite;
+    position: relative; /* Ensure the header is positioned correctly */
 }
 
 .logo {
@@ -101,18 +140,15 @@ header {
 
 /* Navigation toggle button styles */
 .nav-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
     font-size: 45px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    z-index: 1001;
     border-radius: 15px;
-    transition: background-color 0.3s ease, transform 0.3s ease ;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     border: 2px solid #fff;
+    margin-left: auto; /* Align to the right within the header */
 }
 
 /* Social icons styles */
@@ -272,10 +308,11 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-    position: absolute;
+    padding: 5px;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
 }
 
 .footer-content {
@@ -287,13 +324,14 @@ footer {
 .footer-links {
     display: flex;
     gap: 15px;
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 .footer-links a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 12px;
 }
 
 .footer-links a:hover {
@@ -858,3 +896,144 @@ footer {
 .director-info a:hover, .secretary-info a:hover {
     color: #ffcc00;
 }
+
+/* Price List Styles */
+.price-list table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.price-list th, .price-list td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.price-list th {
+    background-color: #333;
+    color: #fff;
+}
+
+.price-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Testimonials Styles */
+.testimonials {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials p {
+    font-style: italic;
+    color: #555;
+}
+
+/* FAQs Styles */
+.faqs {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    color: #555;
+}
+
+/* Contact Button Styles */
+.contact-button {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.contact-button button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-button button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.i-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.i-btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.i-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.i-btn a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+

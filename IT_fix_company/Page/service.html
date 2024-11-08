@@ -1,16 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EIS Services">
-    <meta name="keywords" content="EIS Services, IT Services, IT Solutions, IT Consultancy">
-    <meta name="author" content="EIS">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="img/logo.png" type="image/png">
-    <title>EIS Services</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="EIS Services">
+        <meta name="keywords" content="EIS Services, IT Services, IT Solutions, IT Consultancy">
+        <meta name="author" content="EIS">
+        <link rel="stylesheet" href="../test.css">
+        <link rel="icon" href="../img/logo.png" type="image/png">
+        <title>EIS Services</title>
+    </head>
+    <body>
+        <div class="bg-container">
+            <div class="bg-img"></div>
+        </div>
+        
+        <header>
+            <div class="logo">
+                <img src="../img/logo.png" alt="Expert IT Solutions">
+                <h1>Expert IT Solutions</h1>
+            </div>
+            <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Avaleht</a></li>
+                    _____________________
+                    <li><a href="service.html">Teenused</a></li>
+                    _____________________
+                    <li><a href="about.html">Meist</a></li>
+                    _____________________
+                    <li><a href="price.html">Hinnakiri</a></li>
+                    _____________________
+                    <li><a href="contact.html">Kontakt</a></li>
+                    _____________________
+                </ul>
+                <div id="lan-mobile" class="lan-mobile">
+                    <button onclick="changeLanguage('et')">Eesti</button>
+                    <button onclick="changeLanguage('ru')">Русский</button>
+                    <button onclick="changeLanguage('en')">English</button>
+                </div>
+            </nav>
+            <div id="lan" class="lan">
+                <button onclick="changeLanguage('et')">Eesti</button>
+                <button onclick="changeLanguage('ru')">Русский</button>
+                <button onclick="changeLanguage('en')">English</button>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="../img/vk2.png" alt="VK"></a>
+                <a href="#"><img src="../img/facebook2.png" alt="Facebook"></a>
+                <a href="#"><img src="../img/discord2.jpg" alt="Discord"></a>
+                <a href="#"><img src="../img/telegram3.jfif" alt="Telegram"></a>
+                <a href="#"><img src="../img/instagram2.png" alt="Instagram"></a>
+            </div>
+        </header>
+            <section class="service-section">
+                <h2>Mida Me Teeme</h2>
+                <p>Pakkume tipptasemel IT-teenuseid, sealhulgas tarkvaraarendust, võrgulahendusi ja IT-konsultatsioone. Meie ekspertide meeskond tagab, et teie ettevõte toimib sujuvalt uusima tehnoloogia ja uuenduslike lahendustega.</p>
+            </section>
+            <section class="service-section">
+                <h2>Kuidas Me Seda Teeme</h2>
+                <p>Järgime struktureeritud lähenemist, et mõista teie nõudeid, kujundada lahendus, rakendada see ja pakkuda pidevat tuge. Meie protsess on läbipaistev ja kliendikeskne, et tagada parimad tulemused.</p>
+            </section>
+            <section class="service-section">
+                <h2>Tehnoloogiad, Mida Kasutame</h2>
+                <ul>
+                <li>Programmeerimiskeeled: Python, JavaScript, Java, C#</li>
+                <li>Raamistikud: React, Angular, Django, Spring</li>
+                <li>Andmebaasid: MySQL, PostgreSQL, MongoDB</li>
+                <li>DevOps: Docker, Kubernetes, Jenkins</li>
+                </ul>
+            </section>
+            <section class="service-section">
+                <h2>Mida Me Nende Tehnoloogiatega Teeme</h2>
+                <p>Kasutame neid tehnoloogiaid, et luua skaleeritavaid, turvalisi ja tõhusaid lahendusi, mis on kohandatud teie ettevõtte vajadustele. Alates veebirakendustest kuni pilveinfrastruktuurini, tagame, et meie lahendused on vastupidavad ja tulevikukindlad.</p>
+            </section>
+            <section class="service-section">
+                <h2>Meie Protsess</h2>
+                <ol>
+                <li><strong>Konsultatsioon:</strong> Alustame teie ärivajaduste ja eesmärkide mõistmisest.</li>
+                <li><strong>Planeerimine:</strong> Loome üksikasjaliku plaani, milles on välja toodud projekti ulatus, ajakava ja ressursid.</li>
+                <li><strong>Arendus:</strong> Meie ekspertide meeskond arendab lahenduse, kasutades uusimaid tehnoloogiaid ja parimaid tavasid.</li>
+                <li><strong>Testimine:</strong> Testime lahendust põhjalikult, et tagada selle vastavus kõigile nõuetele ja veavabadus.</li>
+                <li><strong>Juurutamine:</strong> Juurutame lahenduse ja tagame sujuva ülemineku, mis põhjustab teie ettevõttele minimaalseid häireid.</li>
+                <li><strong>Tugi:</strong> Pakume pidevat tuge ja hooldust, et tagada lahenduse jätkuv vastavus teie vajadustele.</li>
+                </ol>
+            </section>
+            <section class="service-section">
+                <h2>Miks Valida Meid</h2>
+                <ul>
+                <li><strong>Asjatundlikkus:</strong> Meie meeskonnal on ulatuslik kogemus IT-tööstuses ja nad tunnevad hästi uusimaid tehnoloogiaid.</li>
+                <li><strong>Kliendikesksus:</strong> Seame esikohale oma klientide vajadused ja teeme nendega tihedat koostööd, et pakkuda parimaid lahendusi.</li>
+                <li><strong>Kvaliteet:</strong> Oleme pühendunud kõrgekvaliteediliste lahenduste pakkumisele, mis vastavad kõrgeimatele standarditele.</li>
+                <li><strong>Innovatsioon:</strong> Oleme alati sammu võrra ees, uurides pidevalt uusi tehnoloogiaid ja lähenemisviise.</li>
+                <li><strong>Usaldusväärsus:</strong> Oleme usaldusväärne partner igas suuruses ettevõtetele, pakkudes usaldusväärseid ja tõhusaid IT-lahendusi.</li>
+                </ul>
+            </section>
+        <footer>
+            <a href="contact.html" class="contact-button">Contact Us</a>
+        </footer>
+        <script src="../JS/script.js"></script>
+    </body>
 </html>

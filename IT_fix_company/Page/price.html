@@ -1,16 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EIS price">
-    <meta name="keywords" content="EIS price, IT price, IT Solutions, IT Consultancy">
+    <meta name="description" content="EIS hinnakiri">
+    <meta name="keywords" content="EIS hinnakiri, IT hinnakiri, IT lahendused, IT konsultatsioon">
     <meta name="author" content="EIS">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="img/logo.png" type="image/png">
-    <title>EIS price</title>
+    <link rel="stylesheet" href="../test.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <title>EIS hinnakiri</title>
 </head>
 <body>
-    
+
+    <div class="bg-container">
+        <div class="bg-img"></div>
+    </div>
+
+    <header >
+        <div class="logo">
+            <img src="../img/logo.png" alt="Expert IT Solutions">
+            <h1>Expert IT Solutions</h1>        
+        </div>
+        <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Avaleht</a></li>
+                _____________________
+                <li><a href="Page/service.html">Teenused</a></li>
+                _____________________
+                <li><a href="Page/about.html">Meist</a></li>
+                _____________________
+                <li><a href="Page/prive.html">Hinnakiri</a></li>
+                _____________________
+                <li><a href="Page/contact.html">Kontakt</a></li>
+                _____________________
+            </ul>
+            <div id="lan-mobile" class="lan-mobile">
+                <button onclick="changeLanguage('et')">Eesti</button>
+                <button onclick="changeLanguage('ru')">Русский</button>
+                <button onclick="changeLanguage('en')">English</button>
+            </div>
+        </nav>
+        <div id="lan" class="lan">
+            <button onclick="changeLanguage('et')">Eesti</button>
+            <button onclick="changeLanguage('ru')">Русский</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="../img/vk2.png" alt="VK"></a>
+            <a href="#"><img src="../img/facebook2.png" alt="Facebook"></a>
+            <a href="#"><img src="../img/discord2.jpg" alt="Discord"></a>
+            <a href="#"><img src="../img/telegram3.jfif" alt="Telegram"></a>
+            <a href="#"><img src="../img/instagram2.png" alt="Instagram"></a>
+        </div>
+    </header>
+    <main>
+        <section class="price-list">
+            <table>
+                <tr>
+                    <th>Teenused</th>
+                    <th>Hind</th>
+                    <th>Kasutus</th>
+                </tr>
+                <tr>
+                    <td>Arvuti Parandus</td>
+                    <td>50€</td>
+                    <td>Riist- ja tarkvaraprobleemide lahendamine</td>
+                </tr>
+                <tr>
+                    <td>Tarkvara Paigaldus</td>
+                    <td>30€</td>
+                    <td>Tarkvara paigaldamine ja seadistamine</td>
+                </tr>
+                <tr>
+                    <td>Võrgu Seadistamine</td>
+                    <td>100€</td>
+                    <td>Võrkude seadistamine ja konfigureerimine</td>
+                </tr>
+                <tr>
+                    <td>Andmete Taastamine</td>
+                    <td>150€</td>
+                    <td>Kadunud või rikutud andmete taastamine</td>
+                </tr>
+                <tr>
+                    <td>IT Konsultatsioon</td>
+                    <td>200€</td>
+                    <td>Ekspert IT nõustamine ja lahendused</td>
+                </tr>
+                <tr>
+                    <td>Veebilehe Arendus</td>
+                    <td>500€</td>
+                    <td>Veebilehtede loomine ja hooldamine</td>
+                </tr>
+                <tr>
+                    <td>Küberjulgeoleku Teenused</td>
+                    <td>300€</td>
+                    <td>Süsteemide ja võrkude kaitsmine digirünnakute eest</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="testimonials">
+            <h2>Kliendi Tagasiside</h2>
+            <p>"Expert IT Solutions pakkus suurepärast teenust ja lahendas meie IT probleemid kiiresti!" - John Doe</p>
+            <p>"Soovitan nende teenuseid väga. Professionaalne ja usaldusväärne." - Jane Smith</p>
+        </section>
+
+        <section class="faqs">
+            <h2>Korduma Kippuvad Küsimused</h2>
+            <div class="faq">
+                <h3>Mida sisaldab Arvuti Paranduse teenus?</h3>
+                
+                <p>Meie Arvuti Paranduse teenus sisaldab riist- ja tarkvaraprobleemide diagnoosimist ja lahendamist.</p>
+            </div>
+            <div class="faq">
+                <h3>Kuidas saan teiega rohkem teavet saada?</h3>
+                <p>Võite meiega ühendust võtta alloleva vormi kaudu või saata e-kirja aadressile info@eis.com.</p>
+            </div>
+        </section>
+
+        <section class="contact-button">
+            <h2>Võta Meiega Ühendust</h2>
+            <a href="../Page/contact.html">
+            <button type="button">Võta Meiega Ühendust</button>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Expert IT Solutions. Kõik õigused kaitstud.</p>
+            <div class="footer-links">
+                <a href="Page/privacy.html">Privaatsuspoliitika</a>
+                <a href="Page/terms.html">Kasutustingimused</a>
+                <a href="Page/contact.html">Võta Meiega Ühendust</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/script.js"></script>
 </body>
 </html>
