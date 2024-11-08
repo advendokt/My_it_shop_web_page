@@ -1,16 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EIS about">
-    <meta name="keywords" content="EIS about, IT about, IT Solutions, IT Consultancy">
+    <meta name="description" content="EIS meist">
+    <meta name="keywords" content="EIS meist, IT meist, IT lahendused, IT konsultatsioonid">
     <meta name="author" content="EIS">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="img/logo.png" type="image/png">
-    <title>EIS about</title>
+    <link rel="stylesheet" href="../test.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <title>EIS meist</title>
 </head>
 <body>
-    
+    <div class="bg-container">
+        <div class="bg-img"></div>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="Expert IT Solutions">
+            <h1>Expert IT Solutions</h1>        
+        </div>
+        <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="../index.html">Avaleht</a></li>
+                _____________________
+                <li><a href="service.html">Teenused</a></li>
+                _____________________
+                <li><a href="about.html">Meist</a></li>
+                _____________________
+                <li><a href="prive.html">Hinnakiri</a></li>
+                _____________________
+                <li><a href="contact.html">Kontakt</a></li>
+                _____________________
+            </ul>
+            <div id="lan-mobile" class="lan-mobile">
+                <button onclick="changeLanguage('et')">Eesti</button>
+                <button onclick="changeLanguage('ru')">Русский</button>
+                <button onclick="changeLanguage('en')">English</button>
+            </div>
+        </nav>
+        <div id="lan" class="lan">
+            <button onclick="changeLanguage('et')">Eesti</button>
+            <button onclick="changeLanguage('ru')">Русский</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="../img/vk2.png" alt="VK"></a>
+            <a href="#"><img src="../img/facebook2.png" alt="Facebook"></a>
+            <a href="#"><img src="../img/discord2.jpg" alt="Discord"></a>
+            <a href="#"><img src="../img/telegram3.jfif" alt="Telegram"></a>
+            <a href="#"><img src="../img/instagram2.png" alt="Instagram"></a>
+        </div> 
+    </header>
+    <main>
+        <section class="about-section">
+            <h2>Meist</h2>
+            <p>Tere tulemast Expert IT Solutionsi! Oleme pühendunud professionaalide meeskond, kes pakub tipptasemel IT-teenuseid, et aidata teie ettevõttel digiajastul edu saavutada. Meie teadmised hõlmavad erinevaid valdkondi, sealhulgas veebiarendus, IT-tugi ja andmebaasihaldus.</p>
+            <p>Meie missioon on pakkuda usaldusväärseid ja uuenduslikke IT-lahendusi, mis on kohandatud iga kliendi ainulaadsetele vajadustele. Oleme uhked oma võime üle kohaneda pidevalt muutuva tehnoloogiamaastikuga ja pakkuda lahendusi, mis toetavad ärikasvu.</p>
+            <p>Aastatepikkuse kogemusega tööstuses on meie meeskond varustatud teadmiste ja oskustega, et lahendada mis tahes IT-väljakutseid. Oleme töötanud klientidega erinevatest sektoritest, nagu tervishoid, haridus ja finantsteenused, tagades nende IT-taristu tugevuse ja tõhususe.</p>
+            <p>Võtke meiega ühendust juba täna, et saada rohkem teavet selle kohta, kuidas saame teid aidata teie ärieesmärkide saavutamisel meie tervikliku IT-teenuste kaudu.</p>
+        </section>
+        
+        <section class="team-section">
+            <h2>Meeskond</h2>
+            <div class="team-member">
+                <img src="img/team/member1.jpg" alt="Meeskonnaliige 1">
+                <h3>John Doe</h3>
+                <p>Tegevjuht</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team/member2.jpg" alt="Meeskonnaliige 2">
+                <h3>Jane Smith</h3>
+                <p>Tehnoloogiajuht</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team/member3.jpg" alt="Meeskonnaliige 3">
+                <h3>Michael Brown</h3>
+                <p>Juhtiv arendaja</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team/member4.jpg" alt="Meeskonnaliige 4">
+                <h3>Emily Davis</h3>
+                <p>Projektijuht</p>
+            </div>
+            <!-- Lisa rohkem meeskonnaliikmeid vastavalt vajadusele -->
+        </section>
+        
+        <section class="history-section">
+            <h2>Meie Ajalugu</h2>
+            <p>Expert IT Solutions asutati 2010. aastal eesmärgiga pakkuda tipptasemel IT-teenuseid igas suuruses ettevõtetele. Aastate jooksul oleme kasvanud ja laiendanud oma teenuseid, et vastata klientide muutuvatele vajadustele.</p>
+            <ul>
+                <li>2010: Ettevõtte asutamine</li>
+                <li>2012: Esimese suure projekti käivitamine</li>
+                <li>2015: Teenuste laiendamine IT-konsultatsioonidele</li>
+                <li>2020: Üle 100 kliendi kogu maailmas</li>
+            </ul>
+        </section>
+        
+        <section class="mission-vision-section">
+            <h2>Meie Missioon ja Visioon</h2>
+            <p><strong>Missioon:</strong> Pakkuda usaldusväärseid ja uuenduslikke IT-lahendusi, mis toetavad ärikasvu ja edu.</p>
+            <p><strong>Visioon:</strong> Olla juhtiv IT-teenuste pakkuja, tuntud oma kvaliteedi ja kliendirahulolu poolest.</p>
+        </section>
+        
+        <section class="testimonials-section">
+            <h2>Klientide Tagasiside</h2>
+            <blockquote>
+                <p>"Expert IT Solutions muutis meie IT-taristu tõhusamaks ja turvalisemaks. Soovitan soojalt!"</p>
+                <cite>- Kliendi nimi, Ettevõte</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Nende meeskond on teadlik ja reageeriv. Nad pakkusid suurepärast tuge ja juhendamist kogu meie projekti vältel."</p>
+                <cite>- Kliendi nimi, Ettevõte</cite>
+            </blockquote>
+            <!-- Lisa rohkem tagasisidet vastavalt vajadusele -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Expert IT Solutions. Kõik õigused kaitstud.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privaatsuspoliitika</a>
+                <a href="terms.html">Kasutustingimused</a>
+                <a href="page/contact.html">Võta meiega ühendust</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
 </body>
 </html>

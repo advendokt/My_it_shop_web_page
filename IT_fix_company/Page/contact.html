@@ -6,11 +6,114 @@
     <meta name="description" content="EIS contact">
     <meta name="keywords" content="EIS contact, IT contact, IT Solutions, IT Consultancy">
     <meta name="author" content="EIS">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="../test.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
     <title>EIS contact</title>
 </head>
 <body>
-    
+    <div class="bg-container">
+        <div class="bg-img"></div>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="Expert IT Solutions">
+            <h1>Expert IT Solutions</h1>        
+        </div>
+        <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="../test.html">Avaleht</a></li>
+                <li><a href="service.html">Teenused</a></li>
+                <li><a href="about.html">Meist</a></li>
+                <li><a href="prive.html">Hinnakiri</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div id="lan" class="lan">
+            <button onclick="changeLanguage('et')">Eesti</button>
+            <button onclick="changeLanguage('ru')">Русский</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="../img/vk2.png" alt="VK"></a>
+            <a href="#"><img src="../img/facebook2.png" alt="Facebook"></a>
+            <a href="#"><img src="../img/discord2.jpg" alt="Discord"></a>
+            <a href="#"><img src="../img/telegram3.jfif" alt="Telegram"></a>
+            <a href="#"><img src="../img/instagram2.png" alt="Instagram"></a>
+        </div>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        
+        <section class="map-section">
+            <h2>Our Location</h2>
+            <div id="map" style="height: 400px;"></div>
+        </section>
+
+        <section class="director-contact-section">
+            <h2>Contact Our General Director and Secretary</h2>
+            <div class="director-contact">
+                <img src="../img/team/director.jpg" alt="General Director">
+                <div class="director-info">
+                    <h3>John Doe</h3>
+                    <p>General Director</p>
+                    <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+                </div>
+            </div>
+            <div class="secretary-contact" style="margin-top: 20px;">
+                <img src="../img/team/secretary.jpg" alt="Secretary">
+                <div class="secretary-info">
+                    <h3>Jane Smith</h3>
+                    <p>Secretary</p>
+                    <p>Email: <a href="mailto:jane.smith@example.com">jane.smith@example.com</a></p>
+                    <p>Phone: <a href="tel:+0987654321">+0987654321</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Expert IT Solutions. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+
+    <script>
+        function initMap() {
+            var location = { lat: -25.344, lng: 131.036 }; // Replace with your desired coordinates
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
 </body>
 </html>
