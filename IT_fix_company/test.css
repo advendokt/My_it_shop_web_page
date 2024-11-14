@@ -21,6 +21,11 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -51,6 +56,12 @@ section ul li, section ol li {
     margin-bottom: 10px;
 }
 
+span {
+    color: #00A8E8;
+    font-size: 32px;
+    font-weight: bold;
+
+}
 /* Service Section Styles */
 .service-section {
     background-color: #fff;
@@ -73,7 +84,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #444;
+    background-color: #423E3B;
     background-size: 400% 400%;
     color: #fff;
     text-align: center;
@@ -367,6 +378,8 @@ footer {
     animation: pulse 1s infinite;
 }
 
+
+
 /* Language selection styles for mobile version */
 .lan-mobile {
     display: none;
@@ -446,6 +459,7 @@ footer {
     -webkit-filter: blur(8px); /* For Safari */
 }
 
+/* Section Styles */
 .section-bg {
     max-width: fit-content;
     margin-left: auto;
@@ -454,13 +468,25 @@ footer {
     margin-bottom: 10px;
     height: auto;
     width: 1000px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2.5px;
+    background: linear-gradient(45deg, #7A89C2, #ac4a73);
+    padding: 20px;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out, gradientAnimation 15s ease infinite;
     border: 2px solid #ccc;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Other CSS styles... */
@@ -581,9 +607,29 @@ footer {
 .mission-vision-section p {
     line-height: 1.6;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.mission-vision-section p:hover {
+    color: #ffcc00;
 }
 
 /* Testimonials Section Styles */
+
+.testimonials {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.testimonials p {
+    font-style: italic;
+    color: #555;
+}
 .testimonials-section {
     background-color: #f4f4f4;
     padding: 40px;
@@ -601,7 +647,7 @@ footer {
 .testimonials-section blockquote {
     background-color: #fff;
     padding: 20px;
-    border-left: 5px solid #ffcc00;
+    border-left: 5px solid #E56399;
     margin-bottom: 20px;
     border-radius: 25px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
